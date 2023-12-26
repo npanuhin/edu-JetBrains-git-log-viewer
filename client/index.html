@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Git log</title>
+</head>
+<body>
+    <div id="gitLog"></div>
+
+    <script>
+        const endpoint = 'https://npanuhin.me:2096';
+
+        const container = document.getElementById('gitLog');
+
+        var messages;
+
+        fetch(endpoint)
+            .then(response => response.text())
+            .then(data => {
+                messages = data.split('\n');
+                messages.forEach(message => {
+                    message = document.createElement('p');
+                    message.textContent = message;
+                    container.appendChild(message);
+                });
+            })
+            .catch(error => console.error('Error fetching Git log:', error));
+    </script>
+</body>
+</html>
