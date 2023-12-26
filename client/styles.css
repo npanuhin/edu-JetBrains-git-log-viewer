@@ -1,0 +1,18 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 20px;
+}
+
+#description {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+#gitLog {
+    background-color: #f4f4f4;
+    padding: 10px;
+    white-space: pre-wrap;
+    font-family: 'Courier New', monospace;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
