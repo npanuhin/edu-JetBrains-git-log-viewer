@@ -31,11 +31,9 @@ This repository contains both the [client](client) and the [server](server) part
 
 - While I don't see any obvious security issues with this implementation, I doubt that the approach of running a shell command from Python in a web application is very secure, so in my opinion it should not be used in a production environment.
 
-   Server is also not protected from DDoS attacks, so please don't try to break it :)
-
 - For each request the server runs `git log` command, which is not very efficient. It would be better to run it only once and then cache the result (just store in some file or even memory).
 
-   For the sake of simplicity, again, I didn't implement this feature.
+   For the sake of simplicity, I didn't implement this feature.
 
 #### Implementaion limitations
 
