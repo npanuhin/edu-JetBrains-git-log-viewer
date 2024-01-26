@@ -1,5 +1,8 @@
 <h1 align="center">Git Log Viewer</h1>
 
+> [!IMPORTANT]
+> This short-term educational project has concluded and is now archived. All components are no longer functional
+
 This simple web application displays the Git log retrieved from the server
 
 Demo is avaliable here: https://gitlog.jb.npanuhin.me
